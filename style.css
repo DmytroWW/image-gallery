@@ -6,7 +6,7 @@
 
 html,
 body {
-  height: 100%; /* Задаємо 100% висоти для сторінки */
+  height: 100%; 
 }
 
 body {
@@ -14,7 +14,7 @@ body {
   line-height: 1.6;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Встановлюємо мінімальну висоту для body */
+  min-height: 100vh;
 }
 .container {
   max-width: 1300px;
@@ -52,7 +52,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   padding: 20px;
-  flex-grow: 1; /* Галерея займає доступне місце */
+  flex-grow: 1; 
 }
 
 .image-container {
@@ -66,14 +66,14 @@ body {
   object-fit: cover;
 }
 
-/* Адаптив для екранів до 768px */
+
 @media (max-width: 768px) {
   .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Адаптив для екранів до 480px */
+
 @media (max-width: 480px) {
   .gallery {
     grid-template-columns: 1fr;
@@ -113,4 +113,51 @@ body {
 
 .search-input:not(:placeholder-shown) + .clear-button {
   display: block;
+}
+
+.search-button {
+  max-width: 36px;
+  max-height: 40px;
+}
+.search-button img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+.footer p {
+  padding-top: 10px;
+  margin-right: 30px;
+  margin-left: 30px;
+  color: black;
+}
+.github {
+  display: block;
+  border-radius: 50%;
+  border: 1px solid #e0e0e0;
+  width: 40px;
+  height: 40px;
+  background-color: #e0e0e0;
+}
+
+.github img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.rsschool {
+  display: block;
+  border-radius: 2px;
+  width: 40px;
+  height: 40px;
+}
+
+.rsschool img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
